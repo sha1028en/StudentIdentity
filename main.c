@@ -14,162 +14,6 @@ char getGrade(double inputValue);
 
 
 
-
-/**************465p. Part 03************/
-
-//void swap(int* dest, int* source){
-//
-//    //int tmp;
-//
-//    //printf("%d %d\n", *q1,  *q1);
-//
-//    //tmp = *dest;
-//    *dest = *source;
-//    //*source = tmp;
-//}
-//
-//
-//int main() {
-//
-//    int array[8] = {1, 2, 3, 4, 5, 6, 7, 8};
-//    int toChangeArray[8] = {1, 2, 3, 4, 5, 6, 7, 8};
-//
-//    int i = 0;
-//
-//    for(i = 0; i < 7; i++){
-//
-//        (i < 6) ? (swap((toChangeArray + (i +1)), (array +i))) : (swap((toChangeArray +i), (array +i)));
-//    }
-//    *(toChangeArray) = *(array +7);
-//
-//    for(i = 0; i < 7; i++){
-//
-//        printf("\n%d", *(toChangeArray + i));
-//    }
-//    return 0;
-//}
-
-
-
-
-
-
-/***********532p. Part 02*******************/
-
-//struct StudentIdentity{
-//
-//    int personId;
-//    double personSlight;
-//    int personWeight;
-//    char personBlood;
-//
-//}; typedef struct StudentIdentity Student;
-//
-//
-//int main(){
-//
-//    int i = 0, bufferInt = 0;
-//    double bufferDouble = 0.0;
-//    char bufferChar;
-//    Student student[5] = {{0, 0.0, 0, 0}, {}};
-//
-//
-//    for(i = 0; i < 5; i++) {
-//
-//        puts("Enter ID");
-//        scanf("%d", &bufferInt);
-//        student[i].personId = bufferInt;
-//
-//        puts("Enter Weight");
-//        scanf("%d", &bufferInt);
-//        student[i].personWeight = bufferInt;
-//
-//        puts("Enter Slight");
-//        scanf("%lf", &bufferDouble);
-//        student[i].personSlight = bufferDouble;
-//
-//        puts("Enter Blood type");
-//        gets(&bufferChar);
-//
-//        strcpy(&student[i].personBlood, &bufferChar);
-//    }
-//
-//    for(i = 0; i < 5; i++){
-//        printf("%d %c %.2lf %d\n", student[i].personId, student[i].personBlood, student[i].personSlight, student[i].personWeight);
-//    }
-//
-//    return 0;
-//}
-
-
-
-/******************532p. Part 04********************/
-
-
-//struct ExampleObject{
-//
-//    int x;
-//    int y
-//
-//}; typedef struct ExampleObject Object;
-//
-//
-//void showObj(Object* sp){ printf("point -> %d", *sp); }
-//
-//
-//int main(){
-//
-//    Object s1 = {10, 10};
-//
-//    showObj(&s1);
-//
-//    return 0;
-//}
-
-
-/************532p. Part07******************/
-
-//struct Node {
-//
-//    int data;
-//    struct Node* link;
-//
-//}; typedef struct Node DataNode;
-//
-//
-//
-//int main(){
-//
-//    DataNode node[3] = {{10, NULL}, {}};
-//
-//
-//    int i = 0;
-//
-//
-//
-//    node[0].link = (node +1);
-//    node[1].link = (node +2);
-//    node[2].link = (node);
-//
-//    node[0].data = 10;
-//    node[1].data = 20;
-//    node[2].data = 30;
-//
-//
-//
-//    for(i = 0; i < 3; i++){
-//
-//        printf("node[%d] : %d\n", i , node[i].data);
-//        printf("node[%d] -> %d\n", i, node[i].link);
-//    }
-//
-//
-//    return 0;
-//}
-
-
-
-
 /*************** REQUEST ********************/
 
 
@@ -184,15 +28,15 @@ const double UNIT_TO_SUBJECT_AVG = 3.0;
 /**************************
 
 *   INIT_LIMIT_REAR
-    personNameÀÇ ±æÀÌ,
-    NULLÀ» À§ÇØ 3ÀÚ¸®¸¸ ¾²ÀÚ!
+    personNameï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½,
+    NULLï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 3ï¿½Ú¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½!
 
 *   LIMIT_STUDENT_REAR
-    ÀÔ·Â¹ÞÀ» ÃÖ´ë ÇÐ»ý ¼ö.
+    ï¿½Ô·Â¹ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½Ð»ï¿½ ï¿½ï¿½.
 
 *   UNIT_TO_SUBJECT_AVG
-    pointAvg¸¦ °è»êÇÏ±â À§ÇØ »ç¿ëÇÏ´Â »ó¼ö
-    ÃÎÁ¡ÀÇ Æò±ÕÀ» ±¸ÇÏ±â À§ÇÑ ¼ö½Ä.
+    pointAvgï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
 
 **************************/
 
@@ -216,19 +60,19 @@ struct StudentIdentity{
 
     StudentIdentity Student[]
 
-*   PersonName[4]   ÇÐ»ýÀÇ ÀÌ¸§ 3ÀÚ¸®.
-*   PersonId        ÇÐ»ýÀÇ ÇÐ¹ø 1000 ~ 9999
-*   PersonGender    ÇÐ»ýÀÇ ¼ºº° 0 ~ 1
+*   PersonName[4]   ï¿½Ð»ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ 3ï¿½Ú¸ï¿½.
+*   PersonId        ï¿½Ð»ï¿½ï¿½ï¿½ ï¿½Ð¹ï¿½ 1000 ~ 9999
+*   PersonGender    ï¿½Ð»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 0 ~ 1
 
-*   pointNation     ±¹¾î Á¡¼ö
-*   pointEnglish    ¿µ¾î Á¡¼ö
-*   pointMath       ¼öÇÐ Á¡¼ö
-*   pointTotal      3°ú¸ñÀÇ ÃÑÁ¡
+*   pointNation     ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+*   pointEnglish    ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+*   pointMath       ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+*   pointTotal      3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
-*   pointAvg        ÃÎÁ¤ÀÇ Æò±Õ.
-                    UNIT_TO_SUBJECT_AVG ¿Í ¿¬°è.
-*   pointGrade      Á¡¼öÀÇ µî±Þ
-                    getGrade(Double Avg)¿Í ¿¬°è.
+*   pointAvg        ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½.
+                    UNIT_TO_SUBJECT_AVG ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
+*   pointGrade      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+                    getGrade(Double Avg)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
 
 **********************************/
 
@@ -257,19 +101,19 @@ int main(){
     srand( time( NULL));
 
 
-    limitStudentRear = getIntRange("Ã³¸®ÇÒ ÇÐ»ý¼ö", 0, LIMIT_STUDENT_REAR);
+    limitStudentRear = getIntRange("Ã³ï¿½ï¿½ï¿½ï¿½ ï¿½Ð»ï¿½ï¿½ï¿½", 0, LIMIT_STUDENT_REAR);
 
 
     while(!isLoop){
 
-        printf("\n1. ÇÐ»ý ÃÊ±âÈ­\n");
-        printf("2. ÇÐ»ý Ãâ·Â\n");
-        printf("3. ÇÐ»ý Á¤·Ä\n");
-        printf("4. ÇÐ»ý »ðÀÔ\n");
-        printf("5. ÇÐ»ý »èÁ¦\n");
-        printf("6. ÇÐ»ý Á¶È¸\n");
-        printf("7. È­¸é ÃÊ±âÈ­\n");
-        printf("0. ÇÁ·Î±×·¥ Á¾·á\n");
+        printf("\n1. ï¿½Ð»ï¿½ ï¿½Ê±ï¿½È­\n");
+        printf("2. ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½\n");
+        printf("3. ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½\n");
+        printf("4. ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½\n");
+        printf("5. ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½\n");
+        printf("6. ï¿½Ð»ï¿½ ï¿½ï¿½È¸\n");
+        printf("7. È­ï¿½ï¿½ ï¿½Ê±ï¿½È­\n");
+        printf("0. ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ï¿½ï¿½ï¿½\n");
         action = getInt("--> ");
 
         switch(action){
