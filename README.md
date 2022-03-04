@@ -51,7 +51,7 @@ int limitStudentRear
    인덱스 관리 시 함수 매개변수명이 "limitRear"거든 이거를 넘겨주면 모든 학생을 대상으로 한다.
 ```
 
-#함수 기능
+# 함수 기능
 ```
 void showStudentIdentity(Student* student, int index)
   해당 인덱스의 학생 정보를 전부 출력
